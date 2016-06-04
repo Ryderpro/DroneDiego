@@ -3,7 +3,7 @@ title: DroneDiego
 email: mail@dronediego.com
 description: > # this means to ignore newlines until "baseurl:"
   San Diego from above. Get the perspective you need.
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
 # User setting
