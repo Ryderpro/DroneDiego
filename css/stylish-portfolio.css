@@ -27,7 +27,7 @@ body {
     -ms-transform: translateX(-50%) translateY(-50%); /* IE 9 */
     -webkit-transform: translateX(-50%) translateY(-50%); /* Chrome, Safari, Opera */
     transform: translateX(-50%) translateY(-50%);
-    background-image: url('img/bg.jpg');
+    background-image: url('../img/bg.jpg');
     background-repeat: no-repeat;
     background-position: center center;;
     background-size: cover;
@@ -231,7 +231,7 @@ hr.small {
     width: 100%;
     height: 400px;
     color: #fff;
-    background: url(/img/callout_cabrillo.jpg) no-repeat center center scroll;
+    background: url(../img/callout_cabrillo.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -240,7 +240,7 @@ hr.small {
 
 /* Portfolio */
 .callout2 {
-     background: url(/img/callout_del.jpg) no-repeat center center scroll;
+     background: url(../img/callout_del.jpg) no-repeat center center scroll;
   }
 
 .portfolio {
