@@ -6,3 +6,18 @@
 
 <!-- Custom Theme JavaScript -->
 <script src="js/custom.js"></script> 
+  <script type="text/javascript" src="js/instafeed.js"></script>
+
+{% assign instafeed_template = '<div class="col-md-6"><div class="portfolio-item"><a href="{{link}}"><img class="img-portfolio img-responsive" src="{{image}}"></a></div></div>' %}
+      <script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'user',
+        userId: 'self',
+        clientId: 'feeade12be304417a4126071d1381418',
+        access_token: '2461351595.feeade1.1f09921f47c34d9eb46376a50208d29f', //Sandbox limited API key, risk and extent of abuse is minimal
+        resolution: 'standard_resolution',
+        limit: 5,
+        template: '{{ instafeed_template }}'
+    });
+    feed.run();
+</script>

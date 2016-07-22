@@ -7,11 +7,10 @@ baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
 # User setting
-owner: 
-email: mail@dronediego.com
-facebook_username:
-twitter_username:
-github_username:
+owner: Drone Diego
+email: DroneDiego@gmail.com
+facebook_username: https://www.facebook.com/dronediego/
+twitter_username: https://twitter.com/dronediego
 address:
   - line: San Diego
   - line: Southern California
