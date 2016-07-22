@@ -9,8 +9,8 @@ url: "" # the base hostname & protocol for your site
 # User setting
 owner: Drone Diego
 email: DroneDiego@gmail.com
-facebook_username: https://www.facebook.com/dronediego/
-twitter_username: https://twitter.com/dronediego
+facebook_username: dronediego
+twitter_username: dronediego
 address:
   - line: San Diego
   - line: Southern California
