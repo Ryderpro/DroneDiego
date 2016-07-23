@@ -238,11 +238,19 @@ hr.small {
     -o-background-size: cover;
 }
 
-/* Portfolio */
 .callout2 {
-     background: url(../img/callout_del.jpg) no-repeat center center scroll;
-  }
+      display: table;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    background: url(../img/callout_del.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;  }
 
+
+/* Portfolio */
 .portfolio {
     padding: 50px 0;
 }
@@ -263,6 +271,16 @@ hr.small {
 
 .call-to-action {
     padding: 50px 0;
+}
+
+.call-to-action a{
+    margin-top: 40px;
+    color: #fff;
+}
+
+.hover-action a:hover{
+    color: #9eaab4;
+    text-decoration: underline;
 }
 
 .call-to-action .btn {
