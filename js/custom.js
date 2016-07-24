@@ -1,5 +1,5 @@
  detectmob();
- 
+
 // Closes the sidebar menu
 $("#menu-close").click(function(e) {
   e.preventDefault();
@@ -41,6 +41,7 @@ $(document).ready(function() {
   });
 });
 
+// Detect mobile browsers load video. https://stackoverflow.com/questions/11381673/detecting-a-mobile-browser/11381730#11381730
 function detectmob() { 
 
     if( navigator.userAgent.match(/Android/i)
@@ -51,13 +52,8 @@ function detectmob() {
     || navigator.userAgent.match(/BlackBerry/i)
     || navigator.userAgent.match(/Windows Phone/i)
     ){
-
-        // If mobile, then we do all this
-
-    }
+ }
     else {
-
-        // If not mobile then do this
 document.getElementById("background").innerHTML = '<source src="img/web_bg.mp4" type="video/mp4">';
     }
-} // detectmob
+}
