@@ -1,3 +1,5 @@
+ detectmob();
+ 
 // Closes the sidebar menu
 $("#menu-close").click(function(e) {
   e.preventDefault();
@@ -38,3 +40,24 @@ $(document).ready(function() {
     $('#map_iframe').addClass('scrolloff');
   });
 });
+
+function detectmob() { 
+
+    if( navigator.userAgent.match(/Android/i)
+    || navigator.userAgent.match(/webOS/i)
+    || navigator.userAgent.match(/iPhone/i)
+    || navigator.userAgent.match(/iPad/i)
+    || navigator.userAgent.match(/iPod/i)
+    || navigator.userAgent.match(/BlackBerry/i)
+    || navigator.userAgent.match(/Windows Phone/i)
+    ){
+
+        // If mobile, then we do all this
+
+    }
+    else {
+
+        // If not mobile then do this
+document.getElementById("background").innerHTML = '<source src="img/web_bg.mp4" type="video/mp4">';
+    }
+} // detectmob
