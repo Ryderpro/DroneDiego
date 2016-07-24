@@ -6,7 +6,19 @@
 
 <!-- Custom Theme JavaScript -->
 <script src="js/custom.js"></script> 
-  <script type="text/javascript" src="js/instafeed.js"></script>
+<script type="text/javascript" src="js/instafeed.js"></script>
+<script src="js/detectmobilebrowser.js"></script> 
+
+<script type="text/javascript">
+var sources = document.querySelectorAll('video#background source');
+// Define the video object this source is contained inside
+var video = document.querySelector('video#background');
+for(var i = 0; i<sources.length;i++) {
+  sources[i].setAttribute('src', sources[i].getAttribute('data-src'));
+}
+// If for some reason we do want to load the video after, for desktop as opposed to mobile (I'd imagine), use videojs API to load
+//video.load(); 
+    </script>
 
 {% assign instafeed_template = '<div class="col-md-6"><div class="portfolio-item"><a href="{{link}}"><img class="img-portfolio img-responsive" src="{{image}}"></a><strong>{{likes}} ♥  | </strong><small>{{caption}}</small></div></div>' %}
       <script type="text/javascript">
@@ -21,4 +33,6 @@
     });
     feed.run();
 </script>
+
+
 
