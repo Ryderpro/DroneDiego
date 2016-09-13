@@ -8,7 +8,7 @@
 <script src="js/custom.js"></script> 
 <script type="text/javascript" src="js/instafeed.js"></script>
 
-{% assign instafeed_template = '<div class="col-md-6"><div class="portfolio-item"><a href="{{link}}"><img class="img-portfolio img-responsive" src="{{image}}"></a><strong>{{likes}} ♥  | </strong><small>{{caption}}</small></div></div>' %}
+{% assign instafeed_template = '<div class="col-md-12"><div class="portfolio-item"><a href="{{link}}"><img class="img-portfolio img-responsive" src="{{image}}"></a><div class="col-md-8 col-md-offset-2"><strong>{{likes}} ♥  | </strong>{{caption}}</div></div></div>' %}
       <script type="text/javascript">
     var feed = new Instafeed({
         get: 'user',
