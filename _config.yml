@@ -1,10 +1,12 @@
-# Site settings
+kramdown:
+  input: GFM
+permalink: pretty
 title: DroneDiego
 email: mail@dronediego.com
-description: > # this means to ignore newlines until "baseurl:"
-  San Diego from above. Get the perspective you need.
-baseurl: "/" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+description: San Diego from above. Get the perspective you need.
+baseurl: # the subpath of your site, e.g. /blog/
+baseurl: 
+url: "http://dronediego.com" # the base hostname & protocol for your site
 
 # User setting
 owner: Drone Diego
@@ -23,3 +25,30 @@ google_api_key:
 
 # Build settings
 markdown: kramdown
+
+sass:
+  sass_dir: css/_scss
+
+exclude:
+- CNAME
+- Gemfile
+- LICENSE
+- Rakefile
+- README.md
+- vendor/
+- vnu/
+- vnu.zip
+
+layouts_dir: ./_layouts
+lang: en
+
+gems:
+    - github-pages
+    - jekyll-seo-tag
+
+compress_html:
+  clippings: all
+  endings: all
+  comments: ["<!--", "-->"]
+  ignore:
+    envs: [travis]
